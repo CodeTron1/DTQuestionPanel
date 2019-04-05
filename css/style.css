@@ -1,6 +1,6 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(../img/bg-head.gif);
+  background-image: url(../img/bg-main.jpg);
   background-size: cover;
   height: auto;
 }
@@ -11,7 +11,7 @@ h1{
   padding-top: 0px;
   color: #fff;
   font-size: 7vw;
-  text-shadow: 1px 1px 2px blue, 0 0 1em white, 0 0 0.2em white;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
 }
 
 .cat{
