@@ -20,36 +20,39 @@
     </div>
   </header>
   <section class="main fluid-container">
-    <form>
+    <form action="senddata.php">
       <div class="row">
         <div class="col-lg-12 ques">
-          <input type="text" name="question" placeholder="Enter your question here.">
+          <input type="text" name="name" placeholder="Enter your name here.">
+        </div>
+        <div class="col-lg-12 ques">
+          <input type="text" name="question" placeholder="Enter your question here." required />
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
-          <input type="text" name="opt1" placeholder="Option 1">
+          <input type="text" name="opt1" placeholder="Option 1" required />
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
-          <input type="text" name="opt1" placeholder="Option 2">
+          <input type="text" name="opt2" placeholder="Option 2" required />
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
-          <input type="text" name="opt1" placeholder="Option 3">
+          <input type="text" name="opt3" placeholder="Option 3" required />
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
-          <input type="text" name="opt1" placeholder="Option 4">
+          <input type="text" name="opt4" placeholder="Option 4" required />
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
           <p>Answer Option
-          <select placeholder="1">
+          <select name="answer" placeholder="1" required>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            <option value="4">4</option>>
+            <option value="4">4</option>
           </select>
           </p>
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
           <p>Select Dificulty
-          <select placeholder="0">
+          <select name="difficulty" placeholder="0" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -61,7 +64,7 @@
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
           <p>Catagory
-          <select>
+          <select name="category" required>
             <option value="Prophet">Prophet</option>
             <option value="Sciene">Sciene</option>
             <option value="History">History</option>
@@ -71,7 +74,7 @@
         </div>
         <div class="col-1g-6 col-sm-12 col-md-6 opt">
           <p>Version
-          <select placeholder="0">
+          <select name="version" placeholder="0" required>
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
