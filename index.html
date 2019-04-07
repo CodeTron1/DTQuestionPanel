@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body onload="loadDoc()">
   <header>
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 masthead">
@@ -68,6 +68,7 @@
             <option value="Prophet">Prophet</option>
             <option value="Sciene">Sciene</option>
             <option value="History">History</option>
+            <option value="Quran">Quran</option>
             <option value="Sahabi">Sahabi</option>
             <option value="Lifestyle">Life style</option>
             <option value="Other">Other</option>
@@ -94,7 +95,21 @@
   <footer>
   </footer>
   <script type="text/javascript" src="js/animate.js"></script>
+  <script>
+    console.log('from outside function');
+     function loadDoc() {
+      console.log('hi man');
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+           // document.getElementById("demo").innerHTML = this.responseText;
+           console.log(this.responseText);
+          }
+        };
+        xhttp.open("GET", "http://codetron.co.in/deentrivia/API/v1/rest.php?method=getnumberofquestions", true);
+        xhttp.send();
+      }    
+  </script>
 </div>
 </body>
-
 </html>
