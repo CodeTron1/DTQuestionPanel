@@ -10,8 +10,16 @@ h1{
   text-align: center;
   padding-top: 0px;
   color: #fff;
-  font-size: 4vw;
+  font-size: 7vw;
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em white;
+}
+
+input[type=text]{
+  height: 40px;
+}
+
+option{
+  background: grey;
 }
 
 .cat{
@@ -101,7 +109,7 @@ input{
 
 
 .main{
-  position: relative;
+  position: fixed;
   bottom: 10%;
   width: 100%;
 }
@@ -149,28 +157,6 @@ section{
   backface-visibility: 0.5;
 }
 
-section{
-  overflow-y: auto;
-}
 .textdeen{
   font-size: 20px;
-}
-
-.table{
-  color: white;
-  width: 100%;
-  text-align: center;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #686f7a;
-}
-tr:nth-child(odd) {
-  background-color: #182f54;
 }
